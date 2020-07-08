@@ -45,6 +45,18 @@ ul,li{
 .qing{
     clear: both;
 }
+.header-2{
+    width: 100%;
+    background: red;
+}
+.header-2-l{
+    float: left;
+
+}
+.header-2-r{
+    float: right;
+
+}
 
 /* 导航 */
 .header-2{
@@ -83,7 +95,7 @@ h1{
 }
 .nav-box{
   border-bottom: 1px solid #999999;
-  width: 300px;
+  width: 200px;
   padding-left:20px ;
     float: left;
   
@@ -96,16 +108,26 @@ h1{
    line-height: 16px;
    padding-left: 15px;
 }
-.nav-box:hover .secondary{
-    display: block;
-}
+
 
 .message{
     width: 800px;
     height: 40px;
     float: right;
-    border: 1px solid black;
+   
+}
+.message li{
+    
+    padding-left: 15px;
+    border: 1px solid #999999;
+}
+.message li  a{
+    color: black;
+    font-size: 13px;
+    margin: 0 20px;
 }
 
-
-
+.message li div{
+    float: right;
+   padding-left: 50px;
+}

@@ -54,7 +54,7 @@ i {
 a,
 u {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 h1,
@@ -98,16 +98,4 @@ textarea {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-.header-2{
-    width: 100%;
-    background: red;
-}
-.header-2-l{
-    float: left;
-
-}
-.header-2-r{
-    float: right;
-
 }
