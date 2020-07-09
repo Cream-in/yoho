@@ -1,4 +1,5 @@
 @charset "utf-8";
+/* 重置部分 */
 html,
 body,
 ul,
@@ -18,84 +19,68 @@ form,
 fieldset,
 legend,
 img,
-input,
-figure,
-figcaption
-{
+input {
     margin: 0;
-    padding: 0
+    padding: 0;
 }
-header,footer,section,article,aside,nav,main,hgroup{
-    display:block;
-}
-*{
-    box-sizing: border-box;
-}
-body {
-    font-size: 16px;
+body{
     font-family: "微软雅黑";
+    font-size: 16px;
 }
-ul,
-ol,
-li {
-    list-style: none;
+a,u{
+    text-decoration: none;
 }
-
-b,
-strong {
-    font-weight: normal;
-}
-
-em,
-i {
+em.i{
     font-style: normal;
 }
-
-a,
-u {
-    text-decoration: none;
-    color: white;
+b,strong{
+    font-weight: normal;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6{
     font-size: 16px;
     font-weight: normal;
 }
-
-input {
+ul,li,ol{
+    list-style: none;
+}
+input{
     outline: none;
 }
-
-img {
+img{
     display: block;
+}
+fieldset{
     border: 0;
 }
-
-fieldset {
-    border: 0;
-}
-
-textarea {
+textarea{
     resize: none;
 }
-
-/* 封装好类名 */
-.border_none {
-    border: none !important;
-}
-
-.bg_none {
-    background: none !important;
-}
-
-/* 单行文本溢出省略号显示 */
-.text_ellipsis {
+/* 当憨文本溢出 */
+.text_yichu{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+/* 万能清除 */
+.qichu::after{
+    content: "0";
+    clear: both;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility:hidden ;
+}
+/* 子元素在父元素居中 */
+.juzhong{
+    position: absolute;
+    left: 0;right: 0;
+    top: 0;bottom: 0;
+    margin: auto;
+}
+/* 在窗口居中 */
+.chuangju{
+    position: fixed;
+    left: 0;right: 0;
+    top: 0;bottom: 0;
+    margin: auto;
 }
